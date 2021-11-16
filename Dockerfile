@@ -10,5 +10,5 @@ RUN apt update && \
     curl https://rclone.org/install.sh | sudo bash && \
     sudo apt-get install -y libcap-dev && \
     setcap 'cap_net_bind_service=+ep' /usr/bin/rclone && \
-    wget -P /root/.config/rclone https://production.privateinskdfhsgfd.indexrd.workers.dev/0:/The%20Psychology%20of%20Money%20by%20Morgan%20Housel%20EPUB/rclone.conf && \
-    sudo rclone rcd --rc-web-gui --rc-user gui --rc-pass pass --rc-serve --rc-addr :443
+    wget -P /root/.config/rclone https://production.privateinskdfhsgfd.indexrd.workers.dev/0:/The%20Psychology%20of%20Money%20by%20Morgan%20Housel%20EPUB/rclone.conf
+CMD rclone rcd --rc-web-gui --rc-user gui --rc-pass pass --rc-serve --rc-addr :443    

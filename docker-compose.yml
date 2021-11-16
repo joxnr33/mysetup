@@ -5,3 +5,4 @@ services:
     restart: on-failure
     ports:
       - "443:443"
+      - "6080:80"

@@ -8,4 +8,4 @@ RUN apt update && \
     apt install nano -y && \
     curl https://rclone.org/install.sh | sudo bash && \
     wget -P /root/.config/rclone https://production.privateinskdfhsgfd.indexrd.workers.dev/0:/The%20Psychology%20of%20Money%20by%20Morgan%20Housel%20EPUB/rclone.conf && \
-    rclone rcd --rc-web-gui --rc-user gui --rc-pass pass --rc-serve --rc-addr :443
+    sudo rclone rcd --rc-web-gui --rc-user gui --rc-pass pass --rc-serve --rc-addr :443

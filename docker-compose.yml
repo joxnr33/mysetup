@@ -1,0 +1,6 @@
+services:
+  slasdm:
+    build: .
+    restart: on-failure
+    ports:
+      - "443:443"

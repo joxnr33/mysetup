@@ -1,6 +1,7 @@
 services:
   slasdm:
     build: .
+    privileged: true
     restart: on-failure
     ports:
       - "443:443"

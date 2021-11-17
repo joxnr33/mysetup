@@ -1,8 +1,12 @@
 services:
+  ubuntu-desktop-lxde-vnc:
+    ports:
+      - '6080:80'
+    volumes:
+            - '/dev/shm:/dev/shm'
+    image: dorowu/ubuntu-desktop-lxde-vnc 
   slasdm:
     build: .
-    privileged: true
     restart: on-failure
     ports:
-      - "443:443"
-      - "6080:80"
+      - '443:443' 

@@ -1,5 +1,6 @@
 services:
   ubuntu-desktop-lxde-vnc:
+    build: .
     ports:
       - '6080:6080'
       - '443:443'

@@ -1,4 +1,4 @@
-FROM dorowu/ubuntu-desktop-lxde-vnc:latest
+FROM dorowu/ubuntu-desktop-lxde-vnc
 EXPOSE 443/tcp
 EXPOSE 443/udp
 RUN apt update && \

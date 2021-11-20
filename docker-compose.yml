@@ -1,8 +1,14 @@
 services:
-  ubuntu-desktop-lxde-vnc:
+  testttt:
     build: .
     ports:
       - '6080:6080'
       - '443:443'
-    volumes:
-            - '/dev/shm:/dev/shm'
+    privileged: true #optional
+    security_opt:
+      - seccomp:unconfined #optional
+    environment:
+      - PUID=0
+      - PGID=0
+      - TZ=Europe/London
+      - SUBFOLDER=/ #optional
